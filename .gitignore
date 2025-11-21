@@ -1,0 +1,75 @@
+# ===================================
+# NutriExpert - Archivos a NO compartir
+# ===================================
+
+# Entornos virtuales de Python
+.venv/
+venv/
+ENV/
+env/
+
+# Node modules (muy pesado, se instala con npm install)
+node_modules/
+
+# Variables de entorno (SECRETOS - NUNCA COMPARTIR)
+.env
+*.env
+!.env.example
+
+# Bases de datos con datos reales
+backend/*.db
+backend/*.sqlite
+backend/*.sqlite3
+!backend/rules_template.db
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Archivos de distribución
+dist/
+dist-ssr/
+build/
+*.egg-info/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+*.old
+
+# Archivos de bloqueo específicos del sistema
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Archivos de prueba locales
+test-login.html
+backend/test_*.py

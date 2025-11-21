@@ -1,0 +1,25 @@
+# NutriExpert Backend Dependencies
+# Instalación: pip install -r requirements.txt
+
+# Web Framework
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Seguridad y Autenticación
+passlib>=1.7.4
+python-jose[cryptography]>=3.3.0
+python-dotenv>=1.0.0
+
+# Validación de datos
+pydantic>=2.0.0
+email-validator>=2.0.0
+
+# CORS
+python-multipart>=0.0.6
+
+# AI y procesamiento de imágenes
+google-generativeai>=0.3.0
+Pillow>=10.0.0
+requests>=2.31.0
+
+# Nota: pbkdf2_sha256 viene incluido con passlib, no requiere instalación adicional
