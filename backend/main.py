@@ -63,7 +63,7 @@ JWT_ALGORITHM = os.getenv("JWT_ALGORITHM", "HS256")
 JWT_EXPIRE_MINUTES = int(os.getenv("JWT_EXPIRE_MINUTES", "480"))
 
 # ---- CONFIGURACIÓN DE GEMINI API ----
-GEMINI_API_KEY = "AIzaSyB9mu55iCvCwRyc8LJX9_FvQ8Jac0afsNE"
+GEMINI_API_KEY = os.getenv("API_GEMINI_KEY")
 try:
     genai.configure(api_key=GEMINI_API_KEY)
     gemini_model = genai.GenerativeModel('gemini-2.5-flash')
